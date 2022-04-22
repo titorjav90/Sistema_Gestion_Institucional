@@ -1,0 +1,148 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/mega-logo.png");
+    background-color: #f6f6f6;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.center{
+    text-align: center;
+}
+
+.opcion{
+    padding: 5px 0;
+}
+
+.barra{
+    background-color:rgb(152, 196, 236);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.seleccionado{
+    background-color: rgb(33, 90, 143);
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+}
+
+#menu{
+    background-color: rgba(128, 128, 128, 0.8);
+    padding: 10px;
+}
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+#menu ul li{
+    display: inline;
+}
+#menu ul li a{
+    color: #1E69E3;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    color: rgb(227, 109, 30);
+}
+
+.cerrar-sesion{
+    float: right;
+}
+
+.links > div{display: inline;}
+
+.links a, .palestra a,#lateral p a{
+    transition-duration: 0.3s;
+    color: #1E69E3;
+    text-decoration: none;
+}
+
+.links a:hover, .palestra a:hover, #lateral p a:hover{
+    color: rgb(227, 109, 30);
+}
+/*  --| Links |--  */
+
+#panel{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+
+#panel > div{
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px #898b8c;
+
+}
+
+.left{
+     justify-content: left!important;
+
+}
+
+/*  --| Palestra |--  */
+.palestra{
+    transition-duration: 1s;
+    max-width: 200px;
+    background-color: #eee;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 1px #898b8c;
+}
+
+.palestra:hover{
+    background-color: #c7c7c7
+;
+}
+
+.palestra img{
+    overflow: hidden;margin: 20px; width: 85%;}
+
+.palestra:hover > img{
+    width: 82%;
+    border-radius: 100px;
+    border: solid 3px #eee;
+}
+/*  --| Palestra |--  */
+
+
+/*  --| Lateral |--  */
+#lateral{
+    max-width: 225px;
+    background-color: #eee;
+}
+#lateral div h4 span{margin: 5px; }
+#lateral img{ width: 25px;}
+
+#lateral p b{
+    position: relative;
+    bottom: 7px;
+}
+
+/*  --| Lateral |--  */
+#app{
+    min-width: 50%!important;
+    max-width: 70%!important;
+    background-color: rgba(128, 128, 128, 0.3);
+    
+}
+
+/*  --| Footer |--  */
+footer{
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    
+    word-wrap: break-word;
+}
+footer a{color: black;}
