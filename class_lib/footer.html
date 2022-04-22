@@ -1,0 +1,38 @@
+		</p><!-- -- | Links | -- -->
+		<footer>
+                <a href="https://docs.google.com/document/d/1eNtGBrlX_2jxlBJL1YbShlXnsbEmydk2_zxmHkARTvs/edit?usp=sharing" target="_blank">Informa del proyecto</a>
+        </footer>
+</body>
+</body>
+	
+	<script src="js/jquery.min-2.1.3-.js"></script>
+<!-- -- |	<script src="js/links.js"></script>    | -- -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+  		$('body').on('click', '#panel a', function(){
+    	var link = $(this).attr('href');
+		link = link.split('=');
+		link = link[1].split('#');
+		link = link[0].split('&');
+
+		var links = 'class_lib/'+link[0]+'/'+link[1]+'.html';
+		//alert(links);
+
+    	$("#app").load(links);
+
+  })
+  		var link = $(location).attr('href');
+  		link = link.split('=');
+		link = link[1].split('&');
+		var links = 'class_lib/'+link[0]+'/'+link[1]+'.html';
+		$("#app").load(links);
+
+})
+
+
+
+		//a
+</script>	
+</html>
